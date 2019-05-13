@@ -1,0 +1,6 @@
+framework module scloud {
+  umbrella header "scloud-umbrella.h"
+
+  export *
+  module * { export * }
+}

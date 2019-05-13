@@ -1,0 +1,6 @@
+framework module Pods_scloud_Tests {
+  umbrella header "Pods-scloud_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

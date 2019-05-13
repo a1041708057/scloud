@@ -1,0 +1,23 @@
+PODS:
+  - AVOSCloud (11.6.3)
+  - scloud (0.1.1):
+    - AVOSCloud
+
+DEPENDENCIES:
+  - scloud (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AVOSCloud
+
+EXTERNAL SOURCES:
+  scloud:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AVOSCloud: 3148cbb1d05be4e479cffa206f147ef09a470fdf
+  scloud: 2bd37c169defeff7f61108d3110b2fb19d99f67b
+
+PODFILE CHECKSUM: b91fab3b9587fe0dabb6aa806f8db5435e5497d1
+
+COCOAPODS: 1.6.1

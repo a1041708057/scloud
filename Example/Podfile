@@ -8,6 +8,5 @@ target 'scloud_Example' do
   target 'scloud_Tests' do
     inherit! :search_paths
 
-    pod 'FBSnapshotTestCase'
   end
 end
