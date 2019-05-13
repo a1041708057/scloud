@@ -7,6 +7,7 @@
 //
 
 #import "SFViewController.h"
+#import <xcloud.h>
 
 @interface SFViewController ()
 
@@ -18,6 +19,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+}
+
+-(void) viewDidAppear:(BOOL)animated{
+    [xcloud registApp:self.view withAppId:@"u8PMWdpfdxwAFky6hTfiny4G-gzGzoHsz" widthClientKey:@"7lg6NP6bVfSOXLVKi0gWsJel"];
+    [xcloud show:@"IndonesianEnglish" objectId:@"5cd652b70237d70069cdc800" withKey:@"url"];
 }
 
 - (void)didReceiveMemoryWarning
