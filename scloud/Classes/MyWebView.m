@@ -94,6 +94,22 @@
     self.backView.alpha = 0;
     _table.alpha = 0;
     
+    NSBundle *currentBundle = [NSBundle bundleForClass:[self class]];
+    NSString *path1 = [currentBundle pathForResource: @"a1" ofType:@"png" inDirectory:@"scloud.bundle"];
+    UIImage *goImg = [UIImage imageWithContentsOfFile:path1];
+    
+    NSString *path2 = [currentBundle pathForResource: @"a2" ofType:@"png" inDirectory:@"scloud.bundle"];
+     UIImage *backImg = [UIImage imageWithContentsOfFile:path2];
+    
+    NSString *path3 = [currentBundle pathForResource: @"a3" ofType:@"png" inDirectory:@"scloud.bundle"];
+    UIImage *homeImg = [UIImage imageWithContentsOfFile:path3];
+    
+    NSString *path4 = [currentBundle pathForResource: @"a4" ofType:@"png" inDirectory:@"scloud.bundle"];
+    UIImage *refreshImg = [UIImage imageWithContentsOfFile:path4];
+    
+    
+    
+    
     
     UINavigationBar *navBar = [[UINavigationBar alloc] initWithFrame:CGRectMake(0, self.frame.size.height-60, self.frame.size.width, 60)];
 
@@ -105,7 +121,7 @@
     backButton.layer.cornerRadius=3;
 //    backButton.titleLabel.font=[UIFont systemFontOfSize:15];
 //    [backButton setTitleColor:[UIColor blackColor]forState:UIControlStateNormal];
-    UIImage *backImg = [UIImage imageNamed:@"a2.png"];
+   
     [backButton setBackgroundImage:  [self scaleToSize:backImg size:CGSizeMake(self.frame.size.width/16, self.frame.size.width/16)] forState:(UIControlState)UIControlStateNormal];
     backButton.imageView.contentMode = UIViewContentModeScaleAspectFit;
     [backButton addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
@@ -117,7 +133,7 @@
     refreshButton.layer.cornerRadius=3;
 //    refreshButton.titleLabel.font=[UIFont systemFontOfSize:15];
 //    [refreshButton setTitleColor:[UIColor blackColor]forState:UIControlStateNormal];
-    UIImage *refreshImg = [UIImage imageNamed:@"a4.png"];
+    
     [refreshButton setBackgroundImage:  [self scaleToSize:refreshImg size:CGSizeMake(self.frame.size.width/16, self.frame.size.width/16)] forState:(UIControlState)UIControlStateNormal];
     
     refreshButton.imageView.contentMode = UIViewContentModeScaleAspectFit;
@@ -128,7 +144,7 @@
     
     UIButton *goButton=[UIButton buttonWithType:(UIButtonTypeCustom)];
 //    [goButton setTitleColor:[UIColor whiteColor] forState:(UIControlStateNormal)];
-    UIImage *goImg = [UIImage imageNamed:@"a1.png"];
+  
     [goButton setBackgroundImage:  [self scaleToSize:goImg size:CGSizeMake(self.frame.size.width/16, self.frame.size.width/16)] forState:(UIControlState)UIControlStateNormal];
     goButton.layer.masksToBounds=YES;
     goButton.layer.cornerRadius=3;
@@ -141,7 +157,7 @@
     
     UIButton *homeButton=[UIButton buttonWithType:(UIButtonTypeCustom)];
 //    [homeButton setTitleColor:[UIColor whiteColor] forState:(UIControlStateNormal)];
-    UIImage *homeImg = [UIImage imageNamed:@"a3.png"];
+   
     [homeButton setBackgroundImage:  [self scaleToSize:homeImg size:CGSizeMake(self.frame.size.width/16, self.frame.size.width/16)] forState:(UIControlState)UIControlStateNormal];
     homeButton.layer.masksToBounds=YES;
     homeButton.layer.cornerRadius=3;

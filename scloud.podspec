@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'scloud'
-  s.version          = '0.1.4'
+  s.version          = '0.1.6'
   s.summary          = 'A short description of scloud.'
 
 # This description is used to generate tags and improve search results.
@@ -32,9 +32,9 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'scloud/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'scloud' => ['scloud/Assets/*.png']
-  # }
+   s.resource_bundles = {
+     'scloud' => ['scloud/Assets/*.png']
+   }
 
   s.frameworks = "Foundation", "UIKit", "WebKit"
   # s.public_header_files = 'Pod/Classes/**/*.h'
