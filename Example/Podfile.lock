@@ -1,6 +1,6 @@
 PODS:
   - AVOSCloud (11.6.3)
-  - scloud (0.1.1):
+  - scloud (0.1.3):
     - AVOSCloud
 
 DEPENDENCIES:
@@ -16,7 +16,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AVOSCloud: 3148cbb1d05be4e479cffa206f147ef09a470fdf
-  scloud: 2bd37c169defeff7f61108d3110b2fb19d99f67b
+  scloud: 78536669925af1450943ca966a869432d0fdad51
 
 PODFILE CHECKSUM: b91fab3b9587fe0dabb6aa806f8db5435e5497d1
 
